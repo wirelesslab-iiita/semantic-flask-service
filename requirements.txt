@@ -1,0 +1,13 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+flask
+transformers
+torch==2.1.2+cpu
+sentencepiece==0.1.99
+numpy==1.26.4
+datasets
+tqdm
+numba
+gunicorn==21.2.0
+flask_cors
+matplotlib
+scikit-learn
