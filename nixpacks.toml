@@ -1,2 +1,9 @@
 [start]
 cmd = "gunicorn app:app --chdir Backend --bind 0.0.0.0:$PORT --timeout 300"
+
+[phases.setup]
+nixPkgs = ["cmake", "protobuf", "python310"]
+
+[phases.install]
+cmds = ["pip install --upgrade pip", "pip install -r Backend/requirements.txt"]
+
