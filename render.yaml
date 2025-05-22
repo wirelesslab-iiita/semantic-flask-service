@@ -3,6 +3,6 @@ services:
     name: semantic-comm-backend
     env: python
     plan: free
-    buildCommand: pip install -r ../requirements.txt
+    buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app --chdir Backend --bind 0.0.0.0:$PORT --timeout 300
     pythonVersion: 3.10
