@@ -1,8 +1,9 @@
 --extra-index-url https://download.pytorch.org/whl/cpu
+
 flask
 transformers
 torch==2.5.1+cpu
-sentencepiece==0.1.99
+sentencepiece==0.1.99 --only-binary=:all:
 numpy==1.26.4
 datasets
 tqdm
